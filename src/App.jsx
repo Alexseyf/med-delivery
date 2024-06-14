@@ -1,9 +1,8 @@
-import "./App.css";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
-import { Inicio, Comprar, Receita,  } from "./components/pages";
-import Fidelidade from "./components/pages/Fidelidade";
+import { Inicio, Comprar, Receita  } from "./components/pages";
 import Sobre from "./components/pages/Sobre";
+import Fidelidade from "./components/pages/Fidelidade";
 
 function App() {
   return (

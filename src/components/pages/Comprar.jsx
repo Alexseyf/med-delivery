@@ -3,10 +3,10 @@ import React from "react";
 export const Comprar = () => {
   return (
     <>
-    <section>
-      <h1>Comprar</h1>
+    <div className="mt-10">
+      <h1  className="ml-8 font-semibold md:mt-20" >Comprar</h1>
       <br />
-      <div>
+      <div className="p-8">
         <h1>Produto</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sequi
@@ -23,7 +23,7 @@ export const Comprar = () => {
         </p>
       </div>
       <br />
-      <div>
+      <div className="p-8">
         <h1>Produto</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sequi
@@ -40,7 +40,7 @@ export const Comprar = () => {
         </p>
       </div>
       <br />
-      <div>
+      <div className="p-8">
         <h1>Produto</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sequi
@@ -57,7 +57,7 @@ export const Comprar = () => {
         </p>
       </div>
       <br />
-      <div>
+      <div className="p-8">
         <h1>Produto</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sequi
@@ -74,7 +74,7 @@ export const Comprar = () => {
         </p>
       </div>
       <br />
-      <div>
+      <div className="p-8">
         <h1>Produto</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sequi
@@ -91,7 +91,7 @@ export const Comprar = () => {
         </p>
       </div>
       <br />
-      </section>
+      </div>
     </>
   );
 };

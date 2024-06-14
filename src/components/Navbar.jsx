@@ -1,37 +1,34 @@
 import React, {useState} from "react";
-import { NavLink, Link } from "react-router-dom";
-import "./Navbar.css";
+import { NavLink } from "react-router-dom";
+import { CiMenuFries } from "react-icons/ci";
 
 export const Navbar = () => {
   const [openMenu, setopenMenu] = useState(false);
   return (
-    <nav>
-      <Link to="/" className="logo__container">
-        <img src="../../img/logo.png" className="logo" alt="" />
-      </Link>
-      <div className="menu" onClick={()=>{
+    <nav>    
+      <div onClick={()=>{
         setopenMenu(!openMenu);
       }}>
-        <span></span>
-        <span></span>
-        <span></span>
+        <CiMenuFries className="lg:hidden sm:flex fixed top-0 right-0 z-10 mr-2 mt-2 text-2xl "/>
       </div>
-      <ul className={openMenu ? "open" : ""}>
-        <li>
+      <ul className={openMenu ? "flex-col fixed top-0 bg-slate-100 w-full text-lg" : "hidden gap-4  md:flex md:fixed md: bg-slate-100 top-0 md:w-full text-lg"}>
+       
+        <li className="ml-2 mt-2">
           <NavLink to="/inicio">Início</NavLink>
         </li>
-        <li>
+        <li className="ml-2 mt-2">
           <NavLink to="/comprar">Comprar</NavLink>
         </li>
-        <li>
+        <li className="ml-2 mt-2">
           <NavLink to="/receita">Enviar Receita</NavLink>
         </li>
-        <li>
+        <li className="ml-2 mt-2">
           <NavLink to="/fidelidade">Fidelidade</NavLink>
         </li>
-        <li>
+        <li className="ml-2 mt-2 mb-2">
           <NavLink to="/sobre">Sobre Nós</NavLink>
         </li>
+       
       </ul>
     </nav>
   );
